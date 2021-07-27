@@ -1,0 +1,275 @@
+{/* here is the form with Name and Email address */}
+
+const FormComponent = React.createClass({
+  render: function() {
+    return (
+
+      <div className="row">
+        <div className="col-md-12">
+          <form action="index.html" method="post">
+            <fieldset>
+              <label htmlFor="name" style={{color:'#fff', fontSize:'150%'}}>Name</label>
+              <input type="text" id="name" name="user_name" placeholder="Your name" />
+              <label htmlFor="email" style={{color:'#fff', fontSize:'150%'}}>Email address</label>
+              <input type="email" id="mail" name="user_email" placeholder="Your email adress" />
+            </fieldset>
+              <button className="btn btn-danger center btn-lg btn btn-default" onClick={()=>{ alert('Work in Progress'); }}>GET STARTED </button>
+              
+          </form>
+        </div>
+      </div>
+    );
+  }
+});
+
+ {/* Here is the parent component */}
+
+class Webamboos extends React.Component {
+    render() {
+        return (
+            <div>
+                
+                <nav className="navbar navbar-inverse navbar-fixed-top">
+                    <div className="container-fluid">
+                    <div className="navbar-header">
+                        <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span className="icon-bar"></span>
+                            <span className="icon-bar"></span>
+                            <span className="icon-bar"></span>
+                        </button>
+                        <a className="navbar-brand" href="#"></a>
+                    </div>
+                    <div className="collapse navbar-collapse" id="myNavbar">
+                        <ul className="nav navbar-nav navbar-right">
+      
+                          <li>
+                            <a href="#Home">ABOUT</a>
+                        </li>
+                       
+                        <li>
+                            <a href="#About">HOW TO</a>
+                        </li>
+                             <li>
+                            <a href="#FAQS">FAQS</a>
+                        </li>
+                        
+                        <li>
+                            <a href="#Contact" style={{color:'#fff', fontSize:'100%', backgroundColor:'#ff0000'}}>CONTACT US</a>
+                        </li>
+                        </ul>'#ff0000'
+                    </div>
+                    </div>
+                </nav>
+                
+                
+ {/* First page*/}
+                
+  <div id="Get" className="sections container-fluid" style={{color: "#fff"}}>
+     <div className="text-center" >
+   <h1 className="ast-home-title">Your awesome <br/>traffic permit <br/>consultant</h1>
+       </div>
+   <button className="btn btn-danger center btn-lg btn btn-default" onClick={()=>{ alert('Work in Progress'); }}>GET STARTED</button>
+      </div>
+                
+  {/* About section */}
+   <div id="Home" className="sections container-fluid">
+   <a href="#"><img src="https://nadyagr.github.io/Trafico/images/about.svg" className="floatRight"/></a>
+   <h1 className="text-danger">ABOUT US</h1><br />
+   <p>The occupational traffic permits one of the most <br />important things in the company when carrying out <br />freight transport. In fact, it is a prerequisite for doing <br />business traffic at all.</p><br />
+   <h2 class="head">How do you do when you need to obtain <br /> a commercial traffic permit for freight <br /> transport to your business?</h2>
+     </div>
+                
+    {/* HOW TO section */}
+                
+  <div id="About" className="sections container-fluid">
+    <div className="container">
+       <div className="row">
+    <h3><strong className="text-danger">HOW TO APPLY</strong><br /><br />
+When applying for a traffic permit, there are certain <br /> requirements that you must meet that are included in <br />the examination: requirements for professional <br />knowledge, solid establishment, good reputation and <br />financial resources, important to remember is to confirm <br />your application for a traffic permit by the company's <br />company signer or CEO.</h3>
+          </div>
+              </div>
+                  </div>
+                
+ {/* FAQ section */}
+                
+   <div className="questions"><h1 className="text-danger">FAQ <a href="#"><img src="https://nadyagr.github.io/Trafico/images/header-img.svg" className="floatRight"/></a></h1> <a href="#"><img src="https://nadyagr.github.io/Trafico/images/faq-img.svg" className="floatRight"/></a>
+    <h1>Questions and Answers <br/>on Professional Traffic<br/> Permits:</h1>
+        </div>
+                 
+   <div id="FAQS" className="sections container-fluid" >
+      <div  className="accordion">
+                       
+        <div className="accordion-item" id="question1">
+        <a className="accordion-link " href="#question1">
+        What is a professional traffic permit?
+         <ion-icon name="add-outline"></ion-icon>
+         <ion-icon name="remove-outline"></ion-icon>
+             </a>
+            
+        <div className="answer">
+        <p> Traffic permits are a requirement for conducting professional traffic</p>
+            </div>
+               </div>
+       
+        <div className="accordion-item" id="question2">
+        <a className="accordion-link" href="#question2">
+         When is a professional traffic permit needed?
+            <ion-icon name="add-outline"></ion-icon>
+            <ion-icon name="remove-outline"></ion-icon></a>
+            
+        <div className="answer">
+        <p>Traffic permits are a requirement for conducting professional traffic.</p>
+           </div>
+              </div>
+                <br/>
+                       
+        <div className="accordion-item" id="question3">
+        <a className="accordion-link" href="#question3">
+           How to check the traffic conditions?                           
+         <ion-icon name="add-outline"></ion-icon>
+         <ion-icon name="remove-outline"></ion-icon>
+           </a>
+            
+         <div className="answer">
+          <p> Traffic permits are a requirement for conducting professional traffic.</p>
+            </div>
+                </div>
+                       
+        <div className="accordion-item" id="question4">
+        <a className="accordion-link" href="#question4">
+         Where to look for a traffic permit?
+           <ion-icon name="add-outline"></ion-icon>
+           <ion-icon name="remove-outline"></ion-icon>
+            </a>
+            
+        <div className="answer">
+        <p> Traffic permits are a requirement for conducting professional traffic. </p>
+           </div>
+              </div>
+                  <br/>
+
+     <div className="accordion-item" id="question5">
+      <a className="accordion-link" href="#question5">
+      What are the requirements for a professional traffic permit?
+       <ion-icon name="add-outline"></ion-icon>
+       <ion-icon name="remove-outline"></ion-icon>
+          </a>
+         
+    <div className="answer">
+      <p> Traffic permits are a requirement for conducting professional traffic. </p>
+         </div>
+             </div>
+                       
+    <div className="accordion-item" id="question6">
+     <a className="accordion-link" href="#question6">
+     Are there differences between a traffic permit and a professional traffic permit?
+      <ion-icon name="add-outline"></ion-icon>
+      <ion-icon name="remove-outline"></ion-icon>
+         </a>
+        
+    <div className="answer">
+     <p> Traffic permits are a requirement for conducting professional traffic.</p>
+        </div>
+            </div>
+                 <br/>
+
+   <div className="accordion-item" id="question7">
+      <a className="accordion-link" href="#question7">
+      Are there professional traffic permit training courses at a distance?
+      <ion-icon name="add-outline"></ion-icon>
+      <ion-icon name="remove-outline"></ion-icon>
+        </a>
+       
+     <div className="answer">
+        <p> Traffic permits are a requirement for conducting professional traffic. </p>
+           </div>
+              </div>
+                       
+     <div className="accordion-item" id="question8">
+      <a className="accordion-link" href="#question8">
+      How much does a commercial traffic permit cost for goods?
+        <ion-icon name="add-outline"></ion-icon>
+        <ion-icon name="remove-outline"></ion-icon>
+           </a>
+         
+      <div className="answer">
+       <p> Traffic permits are a requirement for conducting professional traffic. </p>
+          </div>
+              </div>
+                <br/>
+
+    <div className="accordion-item" id="question9">
+     <a className="accordion-link" href="#question9">
+      How to plug in for the traffic permit test?
+     <ion-icon name="add-outline"></ion-icon>
+     <ion-icon name="remove-outline"></ion-icon>
+        </a>
+        
+     <div className="answer">
+       <p> Traffic permits are a requirement for conducting professional traffic. </p>
+          </div>
+              </div>
+                       
+     <div className="accordion-item" id="question10">
+       <a className="accordion-link" href="#question10">
+       How is the sample for a professional traffic permit booked?
+       <ion-icon name="add-outline"></ion-icon>
+       <ion-icon name="remove-outline"></ion-icon>
+        </a>
+         
+     <div className="answer">
+      <p> Traffic permits are a requirement for conducting professional traffic. </p>
+          </div>
+              </div>
+                       
+                        <button className="btn btn-danger center btn-lg btn btn-default" onClick={()=>{ alert('Work in Progress'); }}>LOAD MORE</button>
+                    </div>
+                      </div>
+                   
+                 
+ {/* FAQ section */}
+
+    <div id="Contact" className="sections container-fluid"><a href="#"><img src="https://nadyagr.github.io/Trafico/images/footer-img.svg" className="floatLeft"/></a>
+    <div className="ast-about-title" style={{color:'#E1E1E1'}}><h4 style={{color:'#fff', fontSize:'50%'}}>We provide traffic management<br/> consultants so you get started <br/>quickly, contact us for a quote <br/>today!  </h4></div> <br/>
+    <div className="margin-left:auto">
+        
+   {/*FormComponent*/}
+                   
+      <FormComponent /> </div> <br/> <br/> <br/>   
+                    </div>
+                
+    <div className="text-right">
+     <a href="#Home" style={{color:'#0D4F8B', fontSize:'150%'}}>ABOUT</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+    <a href="#About" style={{color:'#0D4F8B', fontSize:'150%'}}>HOW TO</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                   
+    <a href="#FAQS" style={{color:'#0D4F8B', fontSize:'150%' }}>FAQS</a>  
+        </div>   
+          <br />
+                    
+      <div className="text-left">&nbsp;&nbsp; Copyright @ 2009
+                      
+     <div className="text-right">
+     <a className="btn btn-default" href="#" target="_blank">
+     <span className="fa-fa-facebook">
+     <i className="fa fa-facebook" style={{color:'#ff0000', fontSize:'200%'}}></i>
+          </span>
+            </a>&nbsp;&nbsp;&nbsp;
+                    
+     <a className="btn btn-default" href="#" target="_blank">
+     <span className="fa-fa-twitter">
+     <i className="fa fa-twitter " style={{color:'#ff0000', fontSize:'200%'}}></i>
+      </span>
+         </a>&nbsp;&nbsp;&nbsp;
+                        
+     <a className="btn btn-default" href="#" target="_blank">
+      <i className="fa fa-linkedin fa-2x" style={{color:'#ff0000', fontSize:'200%'}}></i>
+         </a>
+            </div>
+                </div>
+                    </div>
+        );
+    }
+}
+
+
+ReactDOM.render(<Webamboos />, document.getElementById('challenge'));

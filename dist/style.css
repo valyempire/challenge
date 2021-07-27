@@ -1,0 +1,250 @@
+.sections {
+  padding-top: 50px;
+  min-height: 1080px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+#Get {
+  background-image: url("https://nadyagr.github.io/Trafico/images/header-bg.svg");
+}
+
+#About {
+  background-image: url("https://nadyagr.github.io/Trafico/images/apply.svg");
+}
+
+#Contact {
+  background-image: url("https://nadyagr.github.io/Trafico/images/footer-bg.svg");
+}
+
+.ast-dancing {
+  font-family: Dancing Script, Lucida Sans Unicode, Lucida Grande, sans-serif;
+}
+
+h1 {
+  text-align: left;
+}
+
+h2 {
+  background-color: #ffcccc;
+  display: inline-block;
+}
+
+h3 {
+  text-align: left;
+  float: right;
+}
+
+.ast-home-title {
+  padding-top: 20%;
+  text-shadow: 2px 2px 2px #323232;
+  font-size: 6vw;
+  color: white;
+}
+
+.ast-home-subtitle {
+  text-shadow: 2px 2px 2px #323232;
+  font-family: Dancing Script, Lucida Sans Unicode, Lucida Grande, sans-serif;
+  font-size: 4.6vw;
+}
+
+@media only screen and (min-width: 1560px) {
+  .ast-home-title {
+    font-size: 124px;
+  }
+
+  .ast-home-subtitle {
+    font-size: 71px;
+  }
+}
+@media only screen and (max-width: 630px) {
+  .ast-home-title {
+    font-size: 10vw;
+  }
+
+  .ast-home-subtitle {
+    font-size: 8.05vw;
+  }
+}
+@media only screen and (max-width: 300px) {
+  body {
+    width: 300px;
+  }
+}
+.ast-about-title {
+  font-family: Dancing Script, Lucida Sans Unicode, Lucida Grande, sans-serif;
+  font-size: 410%;
+  color: #000;
+}
+
+.ast-captions {
+  color: #E1E1E1;
+}
+
+.floatRight {
+  float: right;
+  margin: 0 0 0 15px;
+  width: 500px;
+  height: auto;
+  text-align: center;
+  padding: 15px;
+  border: 3px solid white;
+}
+
+.questions {
+  margin: 50px 50px 50px 50px;
+  text-align: center;
+}
+
+.accordion-item {
+  background-color: #e8e9eb;
+  border-radius: 0.4rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  box-shadow: 0.5rem 2px 0.5rem rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  text-align: center;
+}
+
+.accordion-link {
+  font-size: 1.6rem;
+  color: #020305;
+  text-decoration: none;
+  background-color: white;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+  display: inline-block;
+  column-gap: 40px;
+}
+
+.accordion-link ion-icon {
+  color: red;
+  padding: 5rem;
+}
+
+.accordion-link remove-outline {
+  display: none;
+}
+
+.answer {
+  max-height: 0;
+  overflow: hidden;
+  position: relative;
+  background-color: #fab1a0;
+  transition: max-height 650ms;
+}
+
+.answer::before {
+  content: "";
+  position: absolute;
+  width: 0.6rem;
+  height: 90%;
+  background-color: #fab1a0;
+  top: 50%;
+  left: 0;
+  transform: translatey(-50%);
+}
+
+.answer p {
+  font-size: 1.4rem;
+  padding: 2rem;
+}
+
+.accordion-item:target .answer {
+  max-height: 20rem;
+}
+
+.accordion-item:target .accordion-link add-outline {
+  display: none;
+}
+
+.accordion-item:target .accordion-link remove-outline {
+  display: block;
+}
+
+input[type=text],
+input[type=password],
+input[type=date],
+input[type=datetime],
+input[type=email],
+input[type=number],
+input[type=search],
+input[type=tel],
+input[type=time],
+input[type=url],
+textarea,
+select {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+  margin-bottom: 30px;
+}
+
+select {
+  padding: 6px;
+  height: 32px;
+  border-radius: 2px;
+}
+
+fieldset {
+  margin-bottom: 30px;
+  border: none;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+label.light {
+  font-weight: 300;
+  display: inline;
+}
+
+.number {
+  background-color: #5fcf80;
+  color: #fff;
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  font-size: 0.8em;
+  margin-right: 4px;
+  line-height: 30px;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+  border-radius: 100%;
+}
+
+@media screen and (min-width: 480px) {
+  form {
+    max-width: 480px;
+  }
+}
+.fa-facebook:hover {
+  -ms-transform: scale(2.5);
+  -webkit-transform: scale(2.5);
+  transform: scale(3.5);
+}
+.fa-facebook:hover .fa-twitter:hover {
+  -ms-transform: scale(2.5);
+  -webkit-transform: scale(2.5);
+  transform: scale(2.5);
+}
+.fa-facebook:hover .fa-linkedin:hover {
+  -ms-transform: scale(2.5);
+  -webkit-transform: scale(2.5);
+  transform: scale(1.3);
+}
